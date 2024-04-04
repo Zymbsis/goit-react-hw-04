@@ -30,7 +30,7 @@ function App() {
         setLoadMoreButton(false);
         setLoading(true);
         setError(false);
-        const data = await splashRequest(currentPage, valueForSearch);
+        const data = await splashRequest(urrentPage, valueForSearch);
         setImageArray(prev =>
           prev ? prev.concat(data.results) : data.results
         );
@@ -70,9 +70,9 @@ function App() {
     setCurrentPage(currentPage + 1);
   };
 
-  const onImageClick = item => {
+  const onImageClick = obj => {
     setIsModalOpen(true);
-    setModalImage(item);
+    setModalImage(obj);
   };
 
   return (
