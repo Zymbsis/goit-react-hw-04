@@ -1,0 +1,9 @@
+.loader {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.loader svg {
+  overflow: visible;
+}

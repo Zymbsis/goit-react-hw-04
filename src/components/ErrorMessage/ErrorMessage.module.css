@@ -1,0 +1,13 @@
+.errorText {
+  color: azure;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.errorMessage {
+  width: 300px;
+  margin: 0 auto;
+  border-radius: 20px;
+  margin-bottom: 25px;
+}

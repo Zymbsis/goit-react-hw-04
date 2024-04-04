@@ -4,11 +4,12 @@
   font-weight: 400;
   color-scheme: light dark;
   color: #242424;
-  background-color: #fbfbfb;
   font-synthesis: none;
+  background: linear-gradient(90deg, rgba(51, 46, 46, 1) 0%, rgba(28, 27, 27, 1) 35%, rgba(44, 81, 88, 1) 100%);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
 }
 
 h1,
