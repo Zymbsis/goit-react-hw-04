@@ -4,10 +4,10 @@ import { forwardRef } from 'react';
 
 const ImageGallery = forwardRef(({ imgData, onClick }, ref) => {
   return (
-    <ul className={css.imgList}>
+    <ul className={css.imgList} ref={ref}>
       {imgData.map(item => {
         return (
-          <li key={item.id} ref={ref}>
+          <li key={item.id}>
             <ImageCard imgData={item} onClick={onClick} />
           </li>
         );

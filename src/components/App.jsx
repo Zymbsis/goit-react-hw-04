@@ -50,8 +50,9 @@ function App() {
 
   useLayoutEffect(() => {
     if (imgGalleryRef.current !== null && currentPage > 1) {
-      const elemHeight = imgGalleryRef.current.getBoundingClientRect().height;
-      const valueForScrollWindow = Math.ceil(elemHeight * 2.8);
+      const elemHeight =
+        imgGalleryRef.current.lastChild.getBoundingClientRect().height;
+      const valueForScrollWindow = Math.ceil(elemHeight * 2.5);
       window.scrollBy({ top: valueForScrollWindow, behavior: 'smooth' });
     }
   }, [imageArray, currentPage]);
