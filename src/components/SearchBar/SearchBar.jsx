@@ -13,7 +13,17 @@ const SearchBar = ({ onSearch }) => {
 
   return (
     <header className={css.header}>
-      <Toaster position="top-right" />
+      <Toaster
+        position="top-right"
+        toastOptions={{
+          style: {
+            width: 600,
+            height: 75,
+            paddingLeft: 25,
+            fontSize: 18,
+          },
+        }}
+      />
       <form onSubmit={onSubmit}>
         <input
           type="text"
