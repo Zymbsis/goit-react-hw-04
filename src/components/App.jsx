@@ -30,7 +30,7 @@ function App() {
         setLoadMoreButton(false);
         setLoading(true);
         setError(false);
-        const data = await splashRequest(urrentPage, valueForSearch);
+        const data = await splashRequest(currentPage, valueForSearch);
         setImageArray(prev =>
           prev ? prev.concat(data.results) : data.results
         );
